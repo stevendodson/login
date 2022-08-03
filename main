@@ -32,14 +32,14 @@ void reg() {
    
     string input;
     do {
-    cout << endl << "Register" << endl << endl;
-    cout << "Username: ";
-    cin >> username;
-    cout << "Password: ";
-    cin >> password;
+        cout << endl << "Register" << endl << endl;
+        cout << "Username: ";
+        cin >> username;
+        cout << "Password: ";
+        cin >> password;
    
-    cout << endl << "Username: " << username << endl << "Password: " << password << endl << "Is this correct? y/n" << endl;
-    cin >> input;
+        cout << endl << "Username: " << username << endl << "Password: " << password << endl << "Is this correct? y/n" << endl;
+        cin >> input;
     } while (tolower(input[0]) != 'y');
     adduser(username, password);
 }
@@ -54,13 +54,13 @@ int login() {
     string password;
    
     do {
-    cout << "Enter Username: ";
+        cout << "Enter Username: ";
    
-    cin >> username;
+        cin >> username;
    
-    if (umap.find(username) == umap.end()) {
-        cout << "User not found, try again." << endl;
-    }
+        if (umap.find(username) == umap.end()) {
+            cout << "User not found, try again." << endl;
+        }
     } while (umap.find(username)== umap.end());
    
    
